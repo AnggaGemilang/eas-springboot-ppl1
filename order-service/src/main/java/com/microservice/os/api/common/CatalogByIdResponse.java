@@ -1,5 +1,6 @@
 package com.microservice.os.api.common;
 
+import com.microservice.os.api.entity.Catalog;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

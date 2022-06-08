@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class AddCatalogResponse {
+public class CatalogResponse {
     private Catalog catalog;
+    private String msg;
 }

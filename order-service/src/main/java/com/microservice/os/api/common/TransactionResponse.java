@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 public class TransactionResponse {
     private String name;
     private Order order;
-    private double amount;
+    private Long amount;
     private String transactionId;
     private String message;
 }

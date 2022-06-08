@@ -9,14 +9,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "CATALOG_ID")
+@Table(name = "t_catalog")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Catalog {
     @Id
-    private int catalogId;
+    private Integer catalogId;
     private String name;
-    private double price;
-    private int stock;
+    private Long price;
+    private Integer stock;
 }

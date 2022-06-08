@@ -1,9 +1,8 @@
 package com.microservice.os.api.controller;
 
-import com.microservice.os.api.common.Payment;
+import com.microservice.os.api.common.TransactionGetDataResponse;
 import com.microservice.os.api.common.TransactionRequest;
 import com.microservice.os.api.common.TransactionResponse;
-import com.microservice.os.api.entity.Order;
 import com.microservice.os.api.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,9 +12,10 @@ import org.springframework.web.bind.annotation.*;
 public class OrderController {
     @Autowired
     private OrderService service;
-    @PostMapping("/bookOrder")
-    public TransactionResponse bookOrder(@RequestBody TransactionRequest request){
+    @PostMapping("/doOrder")
+    public TransactionResponse doOrder(@RequestBody TransactionRequest request){
         return service.saveOrder(request);
     }
-
+    @GetMapping("/")
+    private TransactionGetDataResponse getDataOrder(){return service.getDataOrder();}
 }

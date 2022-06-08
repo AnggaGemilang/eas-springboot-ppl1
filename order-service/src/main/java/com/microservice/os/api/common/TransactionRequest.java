@@ -1,6 +1,7 @@
 package com.microservice.os.api.common;
 
 import com.microservice.os.api.entity.Order;
+import com.microservice.os.api.entity.Payment;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

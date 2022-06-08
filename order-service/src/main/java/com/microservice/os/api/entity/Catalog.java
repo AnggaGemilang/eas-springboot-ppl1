@@ -1,4 +1,4 @@
-package com.microservice.os.api.common;
+package com.microservice.os.api.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,7 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Catalog {
-    private int catalogId;
+    private Integer catalogId;
     private String name;
-    private double price;
+    private Long price;
+    private Integer stock;
 }
